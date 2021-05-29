@@ -2583,7 +2583,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 5 Brands'; 
 		}
 
 /* Image */
@@ -4686,4 +4686,26 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+	/** self **/
+	.weixin.qr-code{
+		text-align: center;
+	}
+
+	.chinese {
+		display: none;
+	}
+
+	#nav .links .chinese {
+		display: none;
+	}
+
+	.language {
+		margin-left: 2rem;
+		cursor: pointer;
+	}
+
+	.aboutme {
+		background-image:url('../../images/snow.jpg');
 	}

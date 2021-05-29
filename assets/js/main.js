@@ -12,7 +12,37 @@
 		$header = $('#header'),
 		$nav = $('#nav'),
 		$main = $('#main'),
+		$now = $('#now'),
+		$language = $('.language'),
 		$navPanelToggle, $navPanel, $navPanelInner;
+
+		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+		var monthsCN = ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'];
+		var fullMonths = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+		/**
+		 *  
+		 * @returns 返回格式化之后的时间
+		 */
+		var nowShow = function(){
+			var now = new Date();
+			return months[now.getMonth()] + ' ' + now.getDate() + ',  '+ now.getFullYear(); 
+		}
+		$now.append(nowShow);
+
+		$language.click(function(){
+			if($(this).attr('type') === "english"){
+				console.log("EN")
+				$('.english').hide();
+				$('.chinese').show();
+			}else{
+				console.log('CN')
+				$('.chinese').hide();
+				$('.english').show();
+			}
+		});
+		
+		
 
 	// Breakpoints.
 		breakpoints({
