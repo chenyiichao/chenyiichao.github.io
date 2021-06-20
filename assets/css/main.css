@@ -4693,11 +4693,19 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	.chinese {
+	/* .chinese {
+		display: none;
+	} */
+
+	.english{
 		display: none;
 	}
 
-	#nav .links .chinese {
+	/* #nav .links .chinese {
+		display: none;
+	} */
+
+	#nav .links .english {
 		display: none;
 	}
 

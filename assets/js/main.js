@@ -14,6 +14,7 @@
 		$main = $('#main'),
 		$now = $('#now'),
 		$language = $('.language'),
+		$sendMessage = $('#sendMessage'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
 		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
@@ -41,9 +42,17 @@
 				$('.english').show();
 			}
 		});
+	
 		
+		$sendMessage.click(function(){
+			var $name = $('#name').val();
+			var $message = $('#message').val();
+			console.log($name + ": " + $message);
+			// var content = $name + ": " + $message;
+    		// var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+    		// saveAs(blob, "file.txt");//saveAs(blob,filename)
+		}) ;
 		
-
 	// Breakpoints.
 		breakpoints({
 			default:   ['1681px',   null       ],
