@@ -7,6 +7,6 @@ $(document).ready(function(){
     if(param[1] == "weixin"){
         $img.attr('src','images/QRcodeWX.jpg');
     }else{
-        $img.attr('src','images/QRcodeQQ.jpg');
+        $img.attr('src','images/QRcodeQQ2.jpg');
     }
 })
